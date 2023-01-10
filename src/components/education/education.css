@@ -1,0 +1,101 @@
+
+.container.education__container {
+    width:80%;
+    padding-bottom: 2rem;
+}
+
+.education__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.education__card {
+    transition: var(--transition);
+    border-radius: 2rem;
+}
+
+
+.education__swiper {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.education__swiper:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+} 
+
+/* .education__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+} */
+.education__title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.education {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 2rem;
+    user-select: none;
+    font-size: 1rem;
+}
+
+.description {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 95%;
+    margin: 0.8rem auto 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+.education__title {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: .35rem;
+}
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+    #genEd{
+        display: none;
+    }
+    #genEdPGCC{
+        display: none;
+    }
+    .education__cards {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+    .education__cards {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+    #genEdPGCC{
+        display: block;
+    }
+}
